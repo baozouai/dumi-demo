@@ -2,7 +2,7 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   outputPath: 'docs-dist',
-  // base: '/dumi-demo-components',
+  // base: '.',
   publicPath: '/dumi-demo/',
 
   themeConfig: {
