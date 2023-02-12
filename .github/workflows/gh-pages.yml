@@ -26,13 +26,11 @@ jobs:
       # 发布到 github pages 上
       - name: Auto Deploy
         env:
-          GH_REF: github.com/xxx/仓库名.git # github仓库地址http
+          GH_REF: github.com/baozouai/dumi-demo.git # github仓库地址http
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # github token
-          GITEE_REF: gitee.com/[gitee usename]/仓库名.git  # gitee仓库地址,[gitee usename]替换为自己的gitee用户名
-          GITEE_TOKEN: ${{ secrets.GITEE_TOKEN}} # gitee 私人令牌
         run: |
-          git config --global user.name "your name"
-          git config --global user.email "your email"
+          git config --global user.name "baozouai"
+          git config --global user.email "baozouai@gmail.com"
           git clone https://${GH_REF} .deploy_git
           cd .deploy_git
           git checkout gh-pages
