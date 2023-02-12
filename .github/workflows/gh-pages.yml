@@ -42,4 +42,3 @@ jobs:
           # GitHub Pages
           git push --force --quiet "https://${ACCESS_TOKEN}@${GH_REF}" gh-pages:gh-pages
           # Gitee Pages 
-          git push --force --quiet "https://[gitee usename]:${GITEE_TOKEN}@${GITEE_REF}" gh-pages:gh-pages
